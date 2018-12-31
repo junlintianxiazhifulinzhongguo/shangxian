@@ -7,7 +7,7 @@
       <span class="wx-svg-container"><svg-icon icon-class="wechat" class="icon"/></span> 支付宝
     </div>
     <div class="sign-btn" @click="tencentHandleClick('tencent')">
-      <span class="qq-svg-container"><svg-icon icon-class="qq" class="icon"/></span> QQ
+      <span class="qq-svg-container"><svg-icon icon-class="qq" class="icon"/></span> QQ登录
     </div>
   </div>
 </template>
