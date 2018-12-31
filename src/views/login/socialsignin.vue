@@ -1,7 +1,7 @@
 <template>
   <div class="social-signup-container">
     <div class="sign-btn" @click="wechatHandleClick('wechat')">
-      <span class="wx-svg-container"><svg-icon icon-class="wechat" class="icon"/></span> 微信
+      <span class="wx-svg-container"><svg-icon icon-class="wechat" class="icon"/></span> 微信登录
     </div>
     <div class="sign-btn" @click="wechatHandleClick('wechat')">
       <span class="wx-svg-container"><svg-icon icon-class="wechat" class="icon"/></span> 支付宝
