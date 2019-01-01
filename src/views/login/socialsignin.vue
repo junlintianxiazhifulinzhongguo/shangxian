@@ -29,8 +29,8 @@ export default {
     alipayHandleClick(thirdpart) {
       // this.$store.commit('SET_AUTH_TYPE', thirdpart)
       loginByAlipay().then(response => {
-        console.log(response)
-        openWindow(response.auth_url, thirdpart, 600, 600)
+        console.log(response.data)
+        openWindow(response.data.auth_url, thirdpart, 600, 600)
       })
     },
     tencentHandleClick(thirdpart) {
