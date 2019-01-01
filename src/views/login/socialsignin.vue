@@ -31,7 +31,7 @@ export default {
       loginByAlipay().then(response => {
         console.log(response.data)
         console.log(response.data.auth_url)
-        openWindow(response.data.auth_url, thirdpart, 600, 600)
+        openWindow(response.data.auth_url, thirdpart, 540, 540)
       })
     },
     tencentHandleClick(thirdpart) {
