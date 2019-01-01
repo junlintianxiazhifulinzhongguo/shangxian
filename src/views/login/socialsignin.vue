@@ -31,8 +31,6 @@ export default {
       loginByAlipay().then(response => {
         console.log(response.data)
         console.log(response.data.auth_url)
-        const a = JSON.parse(response.data)
-        console.log(a)
         openWindow('https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id=2018123062714467&scope=auth_user&redirect_uri=http://www.junlintianxiazhifulinzhongguo.top/api/auhRedirect', thirdpart, 540, 540)
       })
     },
