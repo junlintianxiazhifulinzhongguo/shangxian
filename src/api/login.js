@@ -11,7 +11,12 @@ export function loginByUsername(username, password) {
     data
   })
 }
-
+export function loginByAlipay() {
+  return request({
+    url: '/api/auhRedirect',
+    method: 'get'
+  })
+}
 export function logout() {
   return request({
     url: '/login/logout',
