@@ -30,6 +30,7 @@ export default {
       // this.$store.commit('SET_AUTH_TYPE', thirdpart)
       loginByAlipay().then(response => {
         console.log(response.data)
+        console.log(response.data.auth_url)
         openWindow(response.data.auth_url, thirdpart, 600, 600)
       })
     },
