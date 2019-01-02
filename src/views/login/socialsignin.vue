@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import openWindow from '@/utils/openWindow'
+// import openWindow from '@/utils/openWindow'
 import { loginByAlipay } from '@/api/login'
 export default {
   name: 'SocialSignin',
@@ -31,7 +31,7 @@ export default {
       loginByAlipay().then(response => {
         console.log(response.data)
         console.log(response.data.auth_url)
-        openWindow('https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id=2018123062714467&scope=auth_user&redirect_uri=http://www.junlintianxiazhifulinzhongguo.top/api/auhRedirect', thirdpart, 540, 540)
+      // openWindow('https://openauth.alipay.com/oauth2/publicAppAuthorize.htm?app_id=2018123062714467&scope=auth_user&redirect_uri=http://www.junlintianxiazhifulinzhongguo.top/api/auhRedirect', thirdpart, 540, 540)
       })
     },
     tencentHandleClick(thirdpart) {
